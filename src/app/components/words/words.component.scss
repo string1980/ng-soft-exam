@@ -1,14 +1,15 @@
 .ducks,.elephants,.lion{
   width: 100%;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   gap:20px;
+
   .ducks__card,.lionWords__card,.elephantWords__card{
     box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
     padding: 10px;
     background: bisque;
-
+    min-width: 300px;
+    border-radius: 10px;
   }
 
 }
