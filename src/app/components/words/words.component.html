@@ -1,0 +1,39 @@
+<div class="container">
+  <button mat-raised-button color="primary" (click)="onGetWords()">Fetch data</button>
+  <button mat-raised-button color="accent" (click)="onGetResults()">Show data</button>
+
+  <div class="ducks" *ngIf="duckWords.length > 0">
+    <h3 >Duck</h3>
+    <div class="ducks__card" *ngFor="let duck of duckWords">
+      <p>{{duck.word}}</p>
+      <p>{{duck.score}}</p>
+      <div class="tags" *ngFor="let tag of duck.tags">
+        <span>{{tag}}</span>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="elephants" *ngIf="elephantWords.length> 0">
+    <h3 >Elephants</h3>
+    <mat-card *ngFor="let elephant of elephantWords">
+      <p>{{elephant.word}}</p>
+      <p>{{elephant.score}}</p>
+      <div class="tags" *ngFor="let tag of elephant.tags">
+        <span>{{tag}}</span>
+      </div>
+    </mat-card>
+  </div>
+
+
+  <div class="lion" *ngIf="lionWords.length> 0">
+    <h3 >Lion</h3>
+    <mat-card *ngFor="let lion of lionWords">
+      <p>{{lion.word}}</p>
+      <p>{{lion.score}}</p>
+      <div class="tags" *ngFor="let tag of lion.tags">
+        <span>{{tag}}</span>
+      </div>
+    </mat-card>
+  </div>
+</div>

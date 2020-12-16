@@ -1,0 +1,77 @@
+[
+  {
+    "word": "lioness",
+    "score": 66316,
+    "tags": [
+      "n"
+    ]
+  },
+  {
+    "word": "leopard",
+    "score": 65749,
+    "tags": [
+      "n",
+      "adj"
+    ]
+  },
+  {
+    "word": "larger",
+    "score": 58636,
+    "tags": [
+      "adj"
+    ]
+  },
+  {
+    "word": "leone",
+    "score": 56160,
+    "tags": [
+      "n",
+      "prop"
+    ]
+  },
+  {
+    "word": "leo",
+    "score": 56072,
+    "tags": [
+      "n",
+      "prop"
+    ]
+  },
+  {
+    "word": "leon",
+    "score": 55774,
+    "tags": [
+      "n",
+      "prop"
+    ]
+  },
+  {
+    "word": "lyon",
+    "score": 53965,
+    "tags": [
+      "n",
+      "prop"
+    ]
+  },
+  {
+    "word": "leones",
+    "score": 50870,
+    "tags": [
+      "n"
+    ]
+  },
+  {
+    "word": "león",
+    "score": 50870,
+    "tags": [
+      "n"
+    ]
+  },
+  {
+    "word": "léon",
+    "score": 50870,
+    "tags": [
+      "n"
+    ]
+  }
+]
