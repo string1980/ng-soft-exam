@@ -20,7 +20,7 @@ export class WordsComponent implements OnInit, OnDestroy {
 
   constructor(private apiService: ApiService,
               private localStorageService: LocalStorageService,
-            ) {
+  ) {
   }
 
   ngOnDestroy(): void {
@@ -34,15 +34,15 @@ export class WordsComponent implements OnInit, OnDestroy {
   onGetWords(): void {
     this.sub = this.apiService.getDuckWord().subscribe(data => {
       this.duckWords = data;
-      localStorage.setItem('ducks', JSON.stringify(this.duckWords));
+      this.localStorageService.setLocalStorage('ducks', this.duckWords);
     });
     this.sub = this.apiService.getElephantWord().subscribe(data => {
       this.elephantWords = data;
-      localStorage.setItem('elephants', JSON.stringify(this.elephantWords));
+      this.localStorageService.setLocalStorage('elephants', this.elephantWords);
     });
     this.sub = this.apiService.getLionWord().subscribe(data => {
       this.lionWords = data;
-      localStorage.setItem('lion', JSON.stringify(this.lionWords));
+      this.localStorageService.setLocalStorage('lion', this.lionWords);
     });
   }
 

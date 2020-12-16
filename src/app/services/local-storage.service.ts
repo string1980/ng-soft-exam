@@ -14,7 +14,7 @@ export class LocalStorageService {
     return storage;
   }
 
-  setLocalStorage(data): any {
-    localStorage.setItem('words', JSON.stringify(data));
+  setLocalStorage(key: string, data: WordModel[]): any {
+    localStorage.setItem(key, JSON.stringify(data));
   }
 }
