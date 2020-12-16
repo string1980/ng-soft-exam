@@ -2,38 +2,38 @@
   <button mat-raised-button color="primary" (click)="onGetWords()">Fetch data</button>
   <button mat-raised-button color="accent" (click)="onGetResults()">Show data</button>
 
+    <h3 *ngIf="duckWords.length > 0">Duck</h3>
   <div class="ducks" *ngIf="duckWords.length > 0">
-    <h3 >Duck</h3>
     <div class="ducks__card" *ngFor="let duck of duckWords">
-      <p>{{duck.word}}</p>
-      <p>{{duck.score}}</p>
+      <p>Word:{{duck.word}}</p>
+      <p>Score:{{duck.score}}</p>
       <div class="tags" *ngFor="let tag of duck.tags">
-        <span>{{tag}}</span>
+        <span>Tag:{{tag}}</span>
       </div>
     </div>
   </div>
 
 
+    <h3 *ngIf="elephantWords.length> 0">Elephants</h3>
   <div class="elephants" *ngIf="elephantWords.length> 0">
-    <h3 >Elephants</h3>
-    <mat-card *ngFor="let elephant of elephantWords">
-      <p>{{elephant.word}}</p>
-      <p>{{elephant.score}}</p>
+    <div class="elephantWords__card" *ngFor="let elephant of elephantWords">
+      <p>Word: {{elephant.word}}</p>
+      <p>Score:{{elephant.score}}</p>
       <div class="tags" *ngFor="let tag of elephant.tags">
-        <span>{{tag}}</span>
+        <span>Tag:{{tag}}</span>
       </div>
-    </mat-card>
+    </div>
   </div>
 
 
+    <h3 *ngIf="elephantWords.length> 0">Lion</h3>
   <div class="lion" *ngIf="lionWords.length> 0">
-    <h3 >Lion</h3>
-    <mat-card *ngFor="let lion of lionWords">
-      <p>{{lion.word}}</p>
-      <p>{{lion.score}}</p>
+    <div class="lionWords__card" *ngFor="let lion of lionWords">
+      <p> Word: {{lion.word}}</p>
+      <p> Score{{lion.score}}</p>
       <div class="tags" *ngFor="let tag of lion.tags">
-        <span>{{tag}}</span>
+        <span>Tag:{{tag}}</span>
       </div>
-    </mat-card>
+    </div>
   </div>
 </div>
